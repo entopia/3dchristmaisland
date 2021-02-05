@@ -2,12 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>index</title>
+<title>test</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <link rel="stylesheet" type="text/css" href="./Qgis2threejs.css">
 <script src="./threejs/three.min.js"></script>
 <script src="./threejs/OrbitControls.js"></script>
-
 <script src="./Qgis2threejs.js"></script>
 </head>
 <body>
@@ -91,9 +90,8 @@
 
 <script>
 Q3D.Config.allVisible = true;
+Q3D.Config.viewpoint = {lookAt:{x:0.0,y:0.0,z:0.0},pos:{x:14.849875968243232,y:-76.22347108004661,z:61.01608986609644}};
 Q3D.Config.localMode = true;
-Q3D.Config.northArrow.visible = true;
-Q3D.Config.northArrow.color = 0x666666;
 if (typeof proj4 === "undefined") document.getElementById("lib_proj4js").style.display = "none";
 
 var app = Q3D.application,
